@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hoa">
+    <meta name="description" content="My Portfolio">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo-header">HOA</div>
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-section">About me</a></li>
+                    <li><a href="#portfolio-section">Portfolio</a></li>
+                    <li><a href="#contact-section">Contact <i class="fa-solid fa-caret-down"></i></a>
+                       
+                        <ul class="dropdown">
+                            <li><a href="https://de.linkedin.com/">Lk</a></li>
+                            <li><a href="https://www.facebook.com/">Fb</a></li>
+                            <li><a href="https://www.instagram.com/">Ig</a></li>
+                        </ul>
+                    </li>
+
+                 </ul>
+            </div>
+           
+            
+        </nav>
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+        <section id="about-section">
+            
+            <div class="photo-about-me"></div>
+            <div class="text-about-me">
+                
+                <div class="text-slide" >
+                    <div class="slide-item">
+
+                        
+                        <h3>Hello!I'm Hoa.</h3>
+                        <p>
+                            I am learning Web development at DCI. <br>
+
+                            I code and learn for various international publications.  <br>
+
+                            I work from my home studio, currently in Markdorf, <br> and I'm always open for new projects and collaborations, so do get in touch if you have something in mind! <br>
+
+                            
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+
+        </section>
+
+        <section id="portfolio-section">
+            <h2>My Portfolio</h2>
+            <div class="gallery">
+               
+                <a href="#">
+                    <img src="/img/flexbox.png" alt="mockup 1">
+                    <h4>Warp club</h4>
+                    
+                </a>
+                <a href="#">
+                    <img src="/img/grid.png" alt="magazin">
+                    <h4>Magazine</h4>
+                    
+                </a>
+                <a href="#">
+                    <img src="/img/mokup.png" alt="book">
+                    <h4>Revue</h4>
+                    
+                </a>
+                <a href="#">
+                    <img src="/img/onepager-home.png" alt="book">
+                    <h4>Start up</h4>
+                    
+                </a>
+               
+                
+                
+                
+                
+
+            </div>
+            
+
+        </section>
+        <section id="contact-section">
+            <h2>Contact me</h2>
+            <div class="form-contact">
+                <div class="contact-infor">
+                        <h3>Contact Infor</h3>
+                        <p><i class="fa-solid fa-location-dot"></i></i> 88677 Markdorf Bodensee</p>
+                        <p><i class="fa-solid fa-phone"></i>(+094) 3866-348</p>
+                        <p><i class="fa-solid fa-envelopes-bulk"></i> hoale@live.de</p>
+                </div>
+
+                <form class="form-content">
+                <fieldset>
+                    <label for="name"> Your name <i class="fa-solid fa-user"></i></label>
+                    
+                    <input type="text" id="name">
+                </fieldset>
+                <fieldset>
+                    <label for="email"> Your email <i class="fa-solid fa-envelope"></i></label>
+                    
+                    <input type="text" id="email">
+                </fieldset>
+                <fieldset>
+                    <label for="message"> Message </label>
+                    <textarea name="tex" id="message" cols="30" rows="10" oninvalid="this.setCutomValidity('Message is empty')"></textarea>
+                </fieldset>
+                <button><a href="#">Hit me up</a><i class="fa-solid fa-paper-plane"></i></button>
+
+                </form>
+            </div>
+            
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li>Mobile app</li>
+                <li>Community</li>
+                <li>Company</li>
+            </ul>
+
+        <div class="logo-header">HOA</div>
+
+        <ul>
+            <li>Help desk</li>
+            <li>Blog</li>
+            <li>Resources</li>
+        </ul>
+        </div>
+        
+
+        <hr>
+        <div class="footer-icon">
+            <a href="https://de.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+ 
+        </div>
+
+        <p>Copyright © 2022 Design Hoa</p>
+
+
+    </footer>
+    
+</body>
+</html>
