@@ -17,7 +17,8 @@ body {
     background:linear-gradient(to left bottom, rgb(249, 168, 212), rgb(216, 180, 254), rgb(129, 140, 248));
     font-family: 'Major Mono Display', monospace;
 }
-
+/* 
+===================== Header ========================= */
 header {
     width: 100%;
     height: 5rem;
@@ -41,7 +42,7 @@ header {
     justify-content: space-between;
 }
 
-
+/* menu styles */
 .list {
     list-style: none;
     display: flex;
@@ -54,8 +55,7 @@ header {
 }
 
 .list a {
-    text-decoration: none;
-    
+    text-decoration: none;    
     position: relative;
     color: #ffffff;
 }
@@ -63,7 +63,7 @@ header {
     color: rgb(129, 140, 248);
 }
 
-/* underline from left stylen */
+/* underline from left style */
 
 .navbar li a::before {
     position: absolute;
@@ -133,7 +133,6 @@ header {
 
 #about-section .photo-about-me {
     grid-area: 1/1;
-
     background-image: url(/img/293860735_335603708639322_2120626662209922937_n.jpg);
     max-width:80%;
     height: 30vw;
@@ -156,24 +155,12 @@ header {
    
 }
 .slide-item p {
-
-  
     color: rgb(38, 52, 180);
     width: fit-content;
 }
-@keyframes typing-animation {
-    from {
-        width:0;
-    }
-    to {
-        width: 12em;
-    }
-}
-
 
 /* Gallery Portfolio
-======================================================= */
-
+-----------------------------------------*/
 #portfolio-section {
     width: 80vw;
     margin: 0 auto;
@@ -191,6 +178,7 @@ header {
 
 #portfolio-section img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .gallery a {
@@ -202,8 +190,7 @@ header {
 }
 
 
-/* --------------contact section 
----------------------------------------*/
+/* ==============CONTACT================================*/
 #contact-section {
     width: 60vw;
     margin: 0 auto;
@@ -290,9 +277,7 @@ button:hover i {
 }
 
 
-/* ===========
-Footer
-======================================= */
+/* ===========Footer======================================= */
 
 footer {
     color: #fff;
@@ -330,7 +315,8 @@ footer p {
 
 /* MEDIA QUERY */
 
-
+/* For mobile phones: */
+/* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
     /* set burger menu at nav */
     .menu {
@@ -373,8 +359,7 @@ footer p {
     .dropdown > li > a {
         line-height: 1.5rem;
     }
-/* set
-about section---------------------------------- */
+    /* setup about section---------------------------------- */
     #about-section  {
         display: flex;
         flex-direction: column;
@@ -385,7 +370,7 @@ about section---------------------------------- */
         font-size: 1.5rem;
     }
 
-/* form */
+    /* form */
     .form-contact {
         flex-direction: column;
     }
@@ -400,7 +385,8 @@ about section---------------------------------- */
     }
 
  }
- /*  */
+ /*  For tablets: */ 
+ /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 768px)  {
     .list {
         margin-top: 2rem;
@@ -465,6 +451,8 @@ about section---------------------------------- */
      
 }
 
+
+/* Medium devices (landscape tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 1200px)  {
     .list {
         margin-top: 2rem;
@@ -497,12 +485,13 @@ about section---------------------------------- */
 
 }
 
-
+ /* For desktop: */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 1024px)  {
     #about-section .text-about-me {
         justify-content: flex-end;
     }
-   
+    /* text h3 styles for destop */
     .slide-item h3 {
         white-space: nowrap;
         letter-spacing: 1rem;
@@ -520,7 +509,7 @@ about section---------------------------------- */
         }
     }
 
-/* Gallery styles animation */
+    /* Gallery styles animation */
     .gallery {
         margin: 0 auto;
         width: 80vw;
