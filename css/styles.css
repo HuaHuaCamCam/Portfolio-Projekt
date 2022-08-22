@@ -138,9 +138,10 @@ header {
     height: 30vw;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     border-radius: 10px;
-
+    border: 2px solid #fff;
+   
 }
 #about-section .text-slide {
     height: 30vw;
@@ -228,6 +229,7 @@ button i {
 .form-content {
     width: 100%;
     border: 0.5pt solid #fff;
+    border-radius: 10px;
     padding: 20px;
     
 }
@@ -300,6 +302,7 @@ hr {
 .footer-icon {
     text-align: center;
     margin-bottom: 1vw;
+ 
 }
 .footer-icon i {
     color: rgb(38, 52, 180);
