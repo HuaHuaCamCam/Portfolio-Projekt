@@ -1,8 +1,8 @@
 # Portfolio-Projekt
 
-Hier ist mein erstes Portfolio, was ich nur HTML und CSS gemacht habe. Es ist nicht alles, was ich gelernt habe aber das ist ein Blick, was ich gemacht habe.
+Hier ist mein erstes Portfolio, was ich nur HTML und CSS gemacht habe. Es ist nicht alles, was ich gelernt habe aber das ist ein Einblick, was ich gemacht habe.
 
-Mein Portfolio wird minimalistisch entworfen, deswegen hat es Inhalt und Layout nach dem Prinzip „Weniger ist mehr“
+Mein Portfolio ist minimalistisch entworfen, deswegen hat es Inhalt und Layout nach dem Prinzip „Weniger ist mehr“
 
 
 Wireframes 
@@ -14,6 +14,7 @@ Wireframes
 
 ![Screen desktop](/img/Bildschirmfoto.png) 
 ![Farbpalette](/img/palette.png) 
+
  Mein Portfolio hat diese Farbpalette.
  Ich benutze diese Farbpalette, weil ich sie mag und sie beruhigen.
 
@@ -30,7 +31,8 @@ Wireframes
 - Wie würde ich die Seite in Zukunft erweitern wollen?
 
     Ich werde auf jeden Falls mehr Sectionen, Projekte im Portfolio Section hinzufügen. Außerdem möchte ich mehr mit JS arbeiten.
-    
+    In der Zukunft würde ich gern mehr neue Kenntnisse kennenlernen, damit erweitere und verbessere ich dieses Portfolio.
+
 
 
 
