@@ -95,7 +95,7 @@ header {
 }
 
 .dropdown > li > a {
-    line-height: 1.5rem;
+    line-height: 2.5rem;
 }
 /* Show the dropdown menu on hover */
 .navbar li:hover ul.dropdown {
@@ -116,7 +116,6 @@ header {
 #about-section {
     padding-top: 10vw;
     display: grid;
-    
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 70%;
@@ -130,8 +129,6 @@ header {
     grid-area: 1/2;
     display: flex;
     flex-direction: column;
-    
-    
 }
 
 #about-section .photo-about-me {
@@ -152,7 +149,7 @@ header {
 .slide-item h3 {
     
     font-size: 3rem;
-    letter-spacing: 0.25em ;
+    letter-spacing: 1rem;
     color:#fff;
     font-weight: 1000;
     overflow: hidden;
@@ -176,55 +173,34 @@ header {
 
 /* Gallery Portfolio
 ======================================================= */
+
 #portfolio-section {
-    height: 90vh;
+    width: 80vw;
+    margin: 0 auto;
 }
+
 #portfolio-section h2,
 #contact-section h2 {
     text-align: center;
     color: #fff;
-    font-size: 3rem;
+    font-size: 4rem;
     padding-top: 5vw;
     padding-bottom: 5vw;
 
 }
-.gallery {
-    margin: 0 auto;
-    width: 80vw;
-    height: 60vmin;
-    display: flex;
-    gap: 5px;
-}
-.gallery a {
-    height: 100%;
-    flex: 1;
-    object-fit: cover;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.4s;
-    position: relative;
-    text-decoration: none;
-   
-}
-.gallery a img {
-    object-fit: cover;
-    height: 90%;
-}
-.gallery a:hover {
-    flex:3;
-    opacity: 0.8;
-    background-color: rgb(249, 168, 212);
 
+#portfolio-section img {
+    max-width: 100%;
 }
-.gallery h4 {
-   text-align: center;
-    color: rgb(38, 52, 180);
-    display: none;
-}
-.gallery a:hover h4 {
+
+.gallery a {
+    margin-bottom: 2rem;
     display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
 }
+
 
 /* --------------contact section 
 ---------------------------------------*/
@@ -254,6 +230,10 @@ header {
 .contact-infor i,
 label i,
 button i {
+    color: rgb(38, 52, 180);
+}
+
+.contact-infor h3 {
     color: rgb(38, 52, 180);
 }
 
@@ -381,9 +361,17 @@ footer p {
     .navbar label i {
         color: #fff;
     }
+    .navbar li:hover ul.dropdown {
+        display: flex;
+        position: absolute;
+    }
 
     #toggler:checked ~ .menu  {
         max-height: 40%;
+    }
+
+    .dropdown > li > a {
+        line-height: 1.5rem;
     }
 /* set
 about section---------------------------------- */
@@ -393,26 +381,10 @@ about section---------------------------------- */
     }
     /* set text on screen 600px or less */
     .slide-item h3 {
-        white-space: wrap;
-        animation: typing-animation 5s steps(9, end) infinite forwards alternate, 
-        0.5s step-end infinite forwards;
+
         font-size: 1.5rem;
-    
-        overflow: hidden;
     }
 
-    @keyframes typing-animation {
-        from {
-            width:0;
-        }
-        to {
-            width:9rem;
-        }
-    }
-/* portfolio section -----*/
-    #portfolio-section {
-        height: 50vh;
-    }
 /* form */
     .form-contact {
         flex-direction: column;
@@ -421,8 +393,6 @@ about section---------------------------------- */
     #contact-section {
         width: 80%;
     }
-
-
 
     /* footer */
     .footer-content ul:first-child {
@@ -440,12 +410,12 @@ about section---------------------------------- */
     #about-section  {
         display: flex;
         flex-direction: column;
-        height: 80vh;
+        height: 100vh;
     }
     .slide-item h3 {
         white-space: nowrap;
-        letter-spacing: 0.2rem;
-        animation: typing-animation 5s steps(16, end) infinite forwards alternate, 
+        letter-spacing: 0.4rem;
+        animation: typing-animation 5s steps(8, end) infinite forwards alternate, 
         0.5s step-end infinite forwards;
     
         overflow: hidden;
@@ -460,24 +430,26 @@ about section---------------------------------- */
         }
     }
 
-    /* gallery */
-    #portfolio-section {
-        height: 60vh;
+    .gallery h4 {
+        color:rgb(38, 52, 180);
+        position: absolute;
+        width: inherit;
+        top: 50%;
+        text-align: center;
+        display: none;
     }
-    .gallery {
+    .gallery a:hover h4 {
+        display: block;
+        font-size: 6vw;
+    }
 
-        flex-direction: column;
+    .gallery a:hover img {
+        opacity: 0.4;
+        
     }
-    .gallery a {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-    }
-    .gallery a img {
-        object-fit: cover;
-        height: 100%;
-    }
+
+    
+
 
     /* form */
     .form-contact {
@@ -493,19 +465,103 @@ about section---------------------------------- */
      
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px)  {
+    .list {
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
 
-@media screen and (min-width: 1200px)  {
+    #about-section  {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .slide-item h3 {
+        white-space: nowrap;
+        letter-spacing: 0.5rem;
+        animation: typing-animation 5s steps(10, end) infinite forwards alternate, 
+        0.5s step-end infinite forwards;
+    
+        overflow: hidden;
+    }
+
+
+    @keyframes typing-animation {
+        from {
+            width:0;
+        }
+        to {
+            width: 12em;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1024px)  {
     #about-section .text-about-me {
         justify-content: flex-end;
     }
    
     .slide-item h3 {
         white-space: nowrap;
+        letter-spacing: 1rem;
         animation: typing-animation 5s steps(13, end) infinite forwards alternate, 
         0.5s step-end infinite forwards;
         width: fit-content;
     }
+
+    @keyframes typing-animation {
+        from {
+            width:0;
+        }
+        to {
+            width: 12em;
+        }
+    }
+
+/* Gallery styles animation */
+    .gallery {
+        margin: 0 auto;
+        width: 80vw;
+        height: 60vmin;
+        display: flex;
+        gap: 5px;
+    }
+    .gallery a {
+        height: 100%;
+        flex: 1;
+        object-fit: cover;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.4s;
+        position: relative;
+       
+    
+    }
+    .gallery a img {
+        object-fit: cover;
+        height: 90%;
+    }
+    .gallery a:hover {
+        flex:3;
+        opacity: 0.8;
+        background-color: rgb(249, 168, 212);
+
+    }
+    .gallery h4 {
+        text-align: center;
+        color: rgb(38, 52, 180);
+        margin-top: 1vw;
+        display: none;
+        
+    }
+    .gallery a:hover h4 {
+        display: block;
+    } 
    
 }
+
 
 
